@@ -6,14 +6,50 @@
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
+    <!-- embedded font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- style -->
 
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Web GProject</title>
   </head>
-  <body>
-    <h1>Figma to HTML</h1>
-    <h2>demo</h2>
+  <body style="height: 10000px">
+    <!-- header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- logo -->
+          <img src="./assets/img/logo.png" alt="EricTravel" class="logo" />
+          <span
+            style="font-weight: bold; font-size: 1.625rem; margin-left: 8px"
+          >
+            <span style="color: #000">Eric</span
+            ><span style="color: #2d7c2d">Travel</span>
+          </span>
+
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="#!">Trang chủ</a></li>
+              <li><a href="#!">Giới thiệu</a></li>
+              <li><a href="#!">Hướng dẫn</a></li>
+              <li><a href="#!">Tra cứu</a></li>
+            </ul>
+          </nav>
+
+          <!-- btn action -->
+          <div class="action">
+            <a href="#!" class="btn btn-dashboard">Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
