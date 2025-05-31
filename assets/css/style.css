@@ -263,10 +263,11 @@ a {
   z-index: 1;
 }
 
+/* ======================= footer ============================== */
 .footer {
   background: #f0f8f0;
   border-top: 2px solid #2d7c2d;
-  padding: 40px 0 20px;
+  padding: 100px 0 20px;
   font-family: "Philosopher", sans-serif;
   color: #2d7c2d;
   font-size: 1.3rem;
@@ -379,4 +380,346 @@ a {
   padding: 10px 0;
   font-size: 1.2rem;
   margin-top: 30px;
+}
+
+/* ======================= popular ============================== */
+.popular {
+  height: 1024px;
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.popular .popular-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.popular .popular-media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.popular .popular-media img {
+  max-width: 100%;
+  height: auto;
+}
+
+.popular .popular-content {
+  flex: 1;
+}
+
+.popular .popular-tag {
+  display: inline-block;
+  border-radius: 8px;
+  background: rgba(45, 124, 45, 0.2);
+  color: #2d7c2d;
+  font-weight: 600;
+  padding: 6px 16px;
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.popular .popular-content h2 {
+  width: 485px;
+  height: 111px;
+  flex-shrink: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.popular .highlight-green {
+  color: #2d7c2d;
+}
+
+.popular .popular-content p {
+  width: 525px;
+  height: 191px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Philosopher;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+/* Grid các tính năng */
+.popular .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.popular .feature-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 36px 4px 37px 18px;
+  border: 2px solid #2d7c2d;
+  border-radius: 12px;
+  background-color: #f6fbf6;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  height: 120px;
+}
+
+.popular .feature-box:hover {
+  background-color: #5a975a;
+}
+
+.popular .feature-box img {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.popular .feature-box span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000;
+}
+
+.popular .circle-bg {
+  position: absolute;
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: 130px solid rgba(45, 124, 45, 0.15);
+  background: transparent;
+  z-index: 1;
+}
+
+/* ======================= guide ============================== */
+.guide {
+  padding: 80px 0;
+  background-color: #ffffff;
+  height: 2140px;
+}
+
+.guide .circle-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* căn giữa chính xác */
+  width: 680px;
+  height: 680px;
+  border-radius: 50%;
+  border: 130px solid rgba(45, 124, 45, 0.15);
+  background: transparent;
+  z-index: 1;
+}
+
+.guide .main-content {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* === Phần giới thiệu === */
+.guide-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.guide-text {
+  flex: 1;
+}
+
+.guide-text .tag {
+  font-family: Philosopher;
+  background-color: #d8f0d8;
+  color: #2d7c2d;
+  padding: 6px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 107px;
+}
+
+.guide-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  margin-bottom: 47px;
+}
+
+.highlight-green {
+  color: #2d7c2d;
+}
+
+.guide-text p {
+  width: 525px;
+  height: 72px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Philosopher;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* === Phần hình bên phải === */
+.guide-image {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  text-align: center;
+}
+
+.guide-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Phần hướng dẫn từng bước === */
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.guide-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.guide-step img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.guide-step .caption {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #444;
+  line-height: 1.6;
+}
+
+.guide-steps .step-1 img {
+  margin-top: 100px;
+}
+
+/* ======================= question ============================== */
+.question {
+  background: #005100;
+  padding: 80px 0;
+  height: 433px;
+}
+
+.question-list {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.question-item {
+  flex: 0 0 100%;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0 24px;
+}
+
+.question .info {
+  flex: 0 0 120px;
+  text-align: center;
+  color: #fff;
+}
+
+.question .avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.question .desc {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: Philosopher;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.question .dots {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.question .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #30ba0d;
+  cursor: pointer;
+}
+
+.question .dot.active {
+  background-color: orange;
+  cursor: default;
+}
+
+.question .content {
+  flex: 1;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  margin-left: 280px;
+}
+
+.question .open-quotes {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.question blockquote {
+  width: 740px;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+}
+
+.question .question-text {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.question .answer-text {
+  color: #fff;
+  font-family: Philosopher;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px;
 }
