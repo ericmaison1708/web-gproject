@@ -23,3 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// Xử lý Hướng dẫn
+const guideBtn = document.getElementById("goToGuide");
+const guideSection = document.getElementById("guide");
+
+if (guideBtn && guideSection) {
+  guideBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    guideSection.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+}
