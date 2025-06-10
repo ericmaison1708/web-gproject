@@ -200,6 +200,28 @@ a {
   color: #fff;
 }
 
+.hero .btn-huongdan {
+  background-color: #2d7c2d;
+  color: #fff;
+  padding: 14px 24px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 1.625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn-huongdan:hover {
+  background-color: #9b9b03;
+}
+
+/* Active: hiệu ứng khi click xuống */
+.hero .btn-huongdan:active {
+  transform: scale(0.97);
+  background-color: #184c18;
+}
+
 .hero .tools {
   display: flex;
   align-items: center;
@@ -621,7 +643,9 @@ a {
 .question {
   background: #005100;
   padding: 80px 0;
-  height: 433px;
+  min-height: 433px;
+  transition: height 0.3s ease;
+  overflow: hidden;
 }
 
 .question-list {
