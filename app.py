@@ -14,9 +14,9 @@ geolocator = Nominatim(user_agent="erictravel_backend", timeout=10)
 
 # Load dữ liệu
 DATA_DIR = "data"
-df_hotels = pd.read_csv(os.path.join(DATA_DIR, "data\hotels.csv")).dropna(subset=['latitude', 'longitude'])
-df_restaurants = pd.read_csv(os.path.join(DATA_DIR, "restaurants.csv")).dropna(subset=['latitude', 'longitude'])
-df_attractions = pd.read_csv(os.path.join(DATA_DIR, "attractions.csv")).dropna(subset=['latitude', 'longitude'])
+df_hotels = pd.read_csv(os.path.join(DATA_DIR, "hotels.csv")).dropna(subset=['latitude', 'longitude'])
+df_restaurants = pd.read_csv(os.path.join(DATA_DIR, "hotels.csv")).dropna(subset=['latitude', 'longitude'])
+df_attractions = pd.read_csv(os.path.join(DATA_DIR, "hotels.csv")).dropna(subset=['latitude', 'longitude'])
 
 def search_places(df, address, radius_km):
     try:
